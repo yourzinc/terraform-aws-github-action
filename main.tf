@@ -1,12 +1,12 @@
 terraform {
-#   cloud {
-#     organization = "<MY-ORG>"
-#     hostname     = "app.terraform.io" # default
+  cloud {
+    organization = "<MY-ORG>"
+    hostname     = "app.terraform.io" # default
 
-#     workspaces {
-#       name = "terraform-aws-github-action"
-#     }
-#   }
+    workspaces {
+      name = "terraform-aws-github-action"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
