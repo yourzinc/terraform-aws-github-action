@@ -4,7 +4,7 @@ terraform {
     hostname     = "app.terraform.io" # default
 
     workspaces {
-      name = "terraform-edu-chapter7-github-action"
+      name = "terraform-aws-github-action"
     }
   }
   required_providers {
