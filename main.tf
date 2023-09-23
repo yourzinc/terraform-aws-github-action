@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "hyungwook"
     hostname     = "app.terraform.io" # default
 
     workspaces {
@@ -30,8 +30,9 @@ resource "aws_vpc" "hashicat" {
   enable_dns_hostnames = true
 
   tags = {
-    name        = "${var.prefix}-vpc-${var.region}"
-    environment = "Production"
+    name = "${var.prefix}-vpc-${var.region}"
+    # environment = "Production"
+    environment = var.environment
   }
 }
 
