@@ -19,8 +19,8 @@ provider "aws" {
   region = var.region
   default_tags {
     tags = {
-      Project = "Coffee-Mug-Cake"
-      Owner   = "jerry & tom"
+      name        = "${var.prefix}-vpc-${var.region}"
+      environment = "MY-ENV"
     }
   }
 }
