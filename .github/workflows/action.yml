@@ -7,8 +7,8 @@ on:
   pull_request:
 
 env:
-  MY_PREFIX: dev
-  TF_VERSION: 1.2.5
+  MY_PREFIX: DEV
+  TF_VERSION: 1.8.5
 
 jobs:
   SCAN:
