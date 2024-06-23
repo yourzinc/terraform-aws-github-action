@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "zinc"
     hostname     = "app.terraform.io" # default
 
     workspaces {
@@ -20,7 +20,7 @@ provider "aws" {
   default_tags {
     tags = {
       name        = "${var.prefix}-vpc-${var.region}"
-      environment = "MY-ENV"
+      environment = var.environment
     }
   }
 }
